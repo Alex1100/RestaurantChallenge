@@ -25,13 +25,6 @@ app.get('/api/items', (req, res) => {
   }, 800);
 });
 
-app.get('/api/images/:imageID', (req, res) => {
-    const imagePath = path.join(__dirname, `../public/images/${req.params.imageID}`)
-    const imageAsBase64 = fs.readFileSync(imagePath, 'base64');
-    
-    res.json(imageAsBase64);
-});
-
 app.listen(3001, () => {
   console.log('API server running on localhost:3001');
 });
