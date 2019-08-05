@@ -1,9 +1,7 @@
 const express = require('express');
-const path = require('path');
 const menu = require('./data/menu.json');
 const sections = require('./data/sections.json');
 const items = require('./data/items.json');
-const fs = require('fs');
 
 const app = express();
 
